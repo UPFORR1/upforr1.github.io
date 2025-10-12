@@ -8,79 +8,63 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
 		<style>
-			/* ===== Playstation-Inspired Theme (▢▲✕◯) ===== */
-
-			/* Base */
 			body {
 				background: #0F1115;
 				color: #EAEAEA;
 			}
-
-			/* Sidebar/Header */
-			#sidebar, #header {
-				background: #16181D;
-			}
-
-			/* Section wrappers */
+			#sidebar, #header { background: #16181D; }
 			.wrapper.style1 { background-color: #16181D; }
 			.wrapper.style2 { background-color: #1E2128; }
 			.wrapper.style3 { background-color: #1A1A1A; }
 			.wrapper.style3-alt { background-color: #222; }
 
-			/* Sidebar symbols */
 			nav ul li a span.symbol {
 				margin-left: 6px;
 				font-weight: bold;
 				font-size: 1.1em;
 			}
-			nav ul li a span.symbol.triangle {
-				font-size: 1.3em; /* make ▲ bigger */
+			nav ul li a span.symbol.triangle { font-size: 1.3em; }
+
+			nav ul li:nth-child(1) a { color: #fff; border-color: #fff; }
+			nav ul li:nth-child(2) a { color: #D391F3; border-color: #D391F3; }
+			nav ul li:nth-child(3) a { color: #00E676; border-color: #00E676; }
+			nav ul li:nth-child(4) a { color: #FF3B30; border-color: #FF3B30; }
+			nav ul li:nth-child(5) a { color: #4A90E2; border-color: #4A90E2; }
+			nav ul li:nth-child(6) a { color: #fff; border-color: #fff; }
+
+			#one h2 { color: #D391F3; }
+			#two h2 { color: #00E676; }
+			#three h2 { color: #FF3B30; }
+			#four h2 { color: #4A90E2; }
+			#five h2 { color: #ffffff; }
+
+			img {
+				max-width: 100%;
+				border-radius: 12px;
+				box-shadow: 0 4px 14px rgba(0,0,0,0.5);
+				margin-bottom: 1.2em;
 			}
-
-			/* Sidebar link colors */
-			nav ul li:nth-child(1) a { color: #fff; border-color: #fff; }         /* Welcome → plain white */
-			nav ul li:nth-child(2) a { color: #D391F3; border-color: #D391F3; }   /* About Me → Square pink */
-			nav ul li:nth-child(3) a { color: #00E676; border-color: #00E676; }   /* My Game Project → Triangle green */
-			nav ul li:nth-child(4) a { color: #FF3B30; border-color: #FF3B30; }   /* Contributions → Circle red */
-			nav ul li:nth-child(5) a { color: #4A90E2; border-color: #4A90E2; }   /* Technology → Cross blue */
-			nav ul li:nth-child(6) a { color: #fff; border-color: #fff; }         /* Get in Touch → default white */
-
-			/* Section title colors */
-			#one h2 { color: #D391F3; }   /* About Me → Square pink */
-			#two h2 { color: #00E676; }   /* My Game Project → Triangle green */
-      #three h2 { color: #FF3B30; }  /* Technology → Circle red */
-			#four h2 { color: #4A90E2; } /* Contributions → Cross blue */
-			
-			#five h2 { color: #ffffff; }  /* Contact → Playstation blue */
-
-			/* Links */
 			a { color: #3f66da; transition: 0.3s; }
 			a:hover { color: #D391F3; }
 
-			/* Buttons */
 			.button.primary {
 				background-color: #4A90E2;
 				color: #fff !important;
 				transition: 0.3s;
+				border-radius: 8px;
 			}
-			.button.primary:hover {
-				background-color: #FF3B30;
-			}
+			.button.primary:hover { background-color: #FF3B30; }
 			.button {
 				border: 1px solid #00A86B;
 				color: #00A86B !important;
+				border-radius: 8px;
 			}
-			.button:hover {
-				background-color: #00A86B;
-				color: #fff !important;
-			}
+			.button:hover { background-color: #00A86B; color: #fff !important; }
 
-			/* Footer background fix */
-			#footer {
-				background-color: #16181D !important;
-			}
+			#footer { background-color: #16181D !important; }
 		</style>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Sidebar -->
@@ -90,9 +74,9 @@
 					<ul>
 						<li><a href="#intro">Welcome</a></li>
 						<li><a href="#one">About Me <span class="symbol" style="color:#D391F3;">▢</span></a></li>
-						<li><a href="#two">My Game Project <span class="symbol triangle" style="color:#00E676;">▲</span></a></li>
+						<li><a href="#two">My Games <span class="symbol triangle" style="color:#00E676;">▲</span></a></li>
 						<li><a href="#three">Contributions <span class="symbol" style="color:#FF3B30;">◯</span></a></li>
-						<li><a href="#four">Technology <span class="symbol" style="color:#4A90E2;">✕</span></a></li>
+						<li><a href="#four">Resume <span class="symbol" style="color:#4A90E2;">✕</span></a></li>
 						<li><a href="#five">Get in Touch</a></li>
 					</ul>
 				</nav>
@@ -104,63 +88,81 @@
 
 			<!-- Intro -->
 			<section id="intro" class="wrapper style1 fullscreen fade-up">
-				<div class="inner">
-					<h1>Hello, my name is Artyom Vardanyan</h1>
-					<p>I am currently studying Computer Science at the University of Michigan and pursuing my passion for game development. 
-					This portfolio highlights the work I have done on my game project and showcases my contributions.</p>
+				<div class="inner" style="text-align:center;">
+					<img src="images/MePicture.jpg" alt="Artyom Vardanyan" style="width:250px; border-radius:50%; margin-bottom:1em;">
+					<h1>Hello, I'm <strong>Artyom Vardanyan</strong></h1>
+					<p>I’m a Computer Science student at the University of Michigan with a passion for <strong>game development</strong>.<br>
+					I love building worlds, designing mechanics, and crafting immersive player experiences through art and code.</p>
 					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Learn more</a></li>
+						<li><a href="#one" class="button scrolly">Learn More</a></li>
 					</ul>
 				</div>
 			</section>
 
-			<!-- About Me -->
-			<section id="one" class="wrapper style2 spotlights">
-				<section>
-					<div class="content">
-						<div class="inner">
-							<h2>About Me</h2>
-							<p>I’m a Computer Science student at the University of Michigan with a strong interest in game development. 
-							I enjoy combining creativity and technical skills, from drawing custom sprites to implementing gameplay systems in Unity. 
-							My goal is to build engaging interactive experiences and continue growing as a game developer.</p>
+			<!-- About Me (Software Tools) -->
+			<section id="one" class="wrapper style2 fade-up">
+				<div class="inner" style="text-align:center;">
+					<h2>Applications I Use</h2>
+					<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:2em; margin-top:2em;">
+						<div style="max-width:200px;">
+							<img src="images/Blender.png" alt="Blender Logo">
+							<p><strong>Blender</strong><br>Used for 3D modeling, animation, and environment design.</p>
+						</div>
+						<div style="max-width:200px;">
+							<img src="images/Photoshop.png" alt="Photoshop Logo">
+							<p><strong>Photoshop</strong><br>Used for UI creation, texture work, and concept art.</p>
+						</div>
+						<div style="max-width:200px;">
+							<img src="images/Unity.png" alt="Unity Logo">
+							<p><strong>Unity</strong><br>My main game engine — where art, code, and gameplay meet.</p>
 						</div>
 					</div>
-				</section>
+				</div>
 			</section>
 
-			<!-- Game Project -->
+			<!-- Game Projects -->
 			<section id="two" class="wrapper style3 fade-up">
-				<div class="inner">
-					<h2>My Game Project</h2>
-					<p>The game my team and I made is inspired by the classic NES Zelda, but with a twist: Link has the ability to teleport two blocks. 
-					This simple mechanic changes the way puzzles and combat flow, giving the experience a unique flavor while keeping the nostalgic Zelda feel.</p>
-					<p>
-						<a href="https://nononoah8.itch.io/nes-zelda" target="_blank" class="button primary">Play the Game on itch.io</a>
-					</p>
+				<div class="inner" style="text-align:center;">
+					<h2>My Games</h2>
+
+					<!-- Zelda Project -->
+					<div style="margin-bottom:3em;">
+						<img src="images/Zelda.png" alt="Zelda Project Screenshot">
+						<h3>Project 1 — NES Zelda-Inspired</h3>
+						<p>A nostalgic top-down adventure inspired by the NES Zelda, featuring a unique teleport mechanic that reshapes puzzles and combat flow.</p>
+						<a href="https://nononoah8.itch.io/nes-zelda" target="_blank" class="button primary">Play on itch.io</a>
+					</div>
+
+					<!-- SmashOut Project -->
+					<div>
+						<img src="images/MainPicture.png" alt="SmashOut Project Screenshot">
+						<h3>Project 2 — SmashOut</h3>
+						<p>A physics-based medieval boxing game where players attack using <strong>R2/1</strong> and block with <strong>R1/2</strong>. Built around weighty combat, reactive feedback, and chaotic fun.</p>
+						<a href="https://upfor.itch.io/smashout" target="_blank" class="button primary">Play on itch.io</a>
+					</div>
 				</div>
 			</section>
 
-			<!-- Contributions -->
+			<!-- Contributions / Creative Section -->
 			<section id="three" class="wrapper style2 fade-up">
-				<div class="inner">
-					<h2>My Contributions</h2>
-					<ul>
-						<li>Created custom hand-drawn sprites for characters and objects.</li>
-						<li>Implemented core gameplay logic for movable blocks, spikes, and other objects.</li>
-						<li>Programmed player character movement and teleport mechanic.</li>
-						<li>Handled character animation phases and transitions.</li>
+				<div class="inner" style="text-align:center;">
+					<h2>Contributions & Skills</h2>
+					<p>I focus on both design and development aspects of game creation.</p>
+					<ul style="list-style:none; padding:0; line-height:1.8em;">
+						<li>🎨 Custom sprite and 3D asset creation.</li>
+						<li>⚙️ Gameplay programming (C# / Unity).</li>
+						<li>🧠 Designing player feedback systems and hit detection.</li>
+						<li>🎮 Controller input mapping and UI polish.</li>
 					</ul>
 				</div>
 			</section>
 
-			<!-- Technology -->
-			<section id="four" class="wrapper style3 fade-up">
-				<div class="inner">
-					<h2>Technology Used</h2>
-					<ul>
-						<li>Unity (C#) for game engine and coding.</li>
-						<li>Photoshop for custom sprite creation and art assets.</li>
-					</ul>
+			<!-- Resume Section -->
+			<section id="four" class="wrapper style3-alt fade-up">
+				<div class="inner" style="text-align:center;">
+					<h2>My Resume</h2>
+					<p>You can view or download my resume to learn more about my background and experience.</p>
+					<a href="assets/ArtyomVardanyan_Resume.pdf" target="_blank" class="button primary">View Resume</a>
 				</div>
 			</section>
 
@@ -177,7 +179,6 @@
 							<h3>LinkedIn</h3>
 							<a href="https://www.linkedin.com/in/artyom-vardanyan-022b44205" target="_blank">Artyom Vardanyan</a>
 						</li>
-						
 					</ul>
 				</div>
 			</section>
