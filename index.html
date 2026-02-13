@@ -72,13 +72,11 @@
 			<div class="inner">
 				<nav>
 					<ul>
-						<li><a href="#intro">Welcome</a></li>
-						<li><a href="#one">About Me <span class="symbol" style="color:#D391F3;">▢</span></a></li>
-						<li><a href="#two">My Games <span class="symbol triangle" style="color:#00E676;">▲</span></a></li>
-						<li><a href="#three">Contributions <span class="symbol" style="color:#FF3B30;">◯</span></a></li>
-						<li><a href="#four">Resume <span class="symbol" style="color:#4A90E2;">✕</span></a></li>
-						<li><a href="#five">Get in Touch</a></li>
-					</ul>
+            <li><a href="#intro">About Me <span class="symbol" style="color:#D391F3;">▢</span></a></li>
+            <li><a href="#two">My Games<span class="symbol triangle" style="color:#00E676;">▲</span></a></li>
+            <li><a href="#three">Personal Project<span class="symbol" style="color:#FF3B30;">◯</span></a></li>
+            <li><a href="#four">3D Projects <span class="symbol" style="color:#4A90E2;">✕</span></a></li>
+          </ul>
 				</nav>
 			</div>
 		</section>
@@ -86,89 +84,299 @@
 		<!-- Wrapper -->
 		<div id="wrapper">
 
-			<!-- Intro -->
-			<section id="intro" class="wrapper style1 fullscreen fade-up">
-				<div class="inner" style="text-align:center;">
-					<img src="images/MePicture.jpg" alt="Artyom Vardanyan" style="width:250px; border-radius:50%; margin-bottom:1em;">
-					<h1>Hello, I'm <strong>Artyom Vardanyan</strong></h1>
-					<p>I’m a Computer Science student at the University of Michigan with a passion for <strong>game development</strong>.<br>
-					I love building worlds, designing mechanics, and crafting immersive player experiences through art and code.</p>
-					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Learn More</a></li>
-					</ul>
-				</div>
-			</section>
+			<!-- About Me / Hero (Centered like your first picture) -->
+<section id="intro" class="wrapper style1 fullscreen fade-up">
+  <div class="inner" style="max-width: 980px; margin: 0 auto; text-align: center;">
+
+    <img
+      src="images/MePicture.jpg"
+      alt="Artyom Vardanyan"
+      style="
+        width: 240px;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid rgba(255,255,255,0.15);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+        margin-bottom: 1.4rem;
+      "
+    />
+
+    <h1 style="margin-bottom: 0.75rem;">Hello, I'm <strong>Artyom Vardanyan</strong></h1>
+
+    <p style="
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 1.4rem;
+      line-height: 1.85;
+      opacity: 0.95;
+    ">
+      Innovative and driven Computer Scientist with hands-on experience in full-stack development, 3D
+      animation, game design, and AI-powered marketing. Founder of a profitable international digital
+      agency scaling to <strong>200K+ yearly sales</strong>, and creative director of a published game tested by
+      <strong>300+ players</strong>. Skilled in <strong>Python, C++, C#, and Java</strong>, with a proven track
+      record of leading cross-functional teams, contributing to open-source projects (Godot), and building
+      immersive tech experiences. Seeking an entry-level software or game development role in Michigan to
+      fuse technical depth with creative vision and make meaningful digital impact.
+    </p>
+
+    <ul class="actions" style="justify-content: center; margin-top: 2rem;">
+      <li>
+        <a href="assets/ArtyomVardanyan_Resume.pdf" target="_blank" class="button primary">
+          View Resume
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
 
 			<!-- About Me (Software Tools) -->
 			<section id="one" class="wrapper style2 fade-up">
-				<div class="inner" style="text-align:center;">
-					<h2>Applications I Use</h2>
-					<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:2em; margin-top:2em;">
-						<div style="max-width:200px;">
-							<img src="images/Blender.png" alt="Blender Logo">
-							<p><strong>Blender</strong><br>Used for 3D modeling, animation, and environment design.</p>
-						</div>
-						<div style="max-width:200px;">
-							<img src="images/Photoshop.png" alt="Photoshop Logo">
-							<p><strong>Photoshop</strong><br>Used for UI creation, texture work, and concept art.</p>
-						</div>
-						<div style="max-width:200px;">
-							<img src="images/Unity.png" alt="Unity Logo">
-							<p><strong>Unity</strong><br>My main game engine — where art, code, and gameplay meet.</p>
-						</div>
-					</div>
-				</div>
-			</section>
+  <div class="inner" style="max-width: 1050px; margin: 0 auto; text-align:center;">
+    <h2>Tools & Tech</h2>
+    <p style="opacity:0.85; max-width: 860px; margin: 0 auto 2rem auto;">
+      A quick snapshot of the tools and languages I use across game dev, full-stack, 3D, and deployment.
+    </p>
 
-			<!-- Game Projects -->
-			<section id="two" class="wrapper style3 fade-up">
-				<div class="inner" style="text-align:center;">
-					<h2>My Games</h2>
+    <!-- Dock -->
+    <div class="dock-wrap">
+      
 
-					<!-- Zelda Project -->
-					<div style="margin-bottom:3em;">
-						<img src="images/Zelda.png" alt="Zelda Project Screenshot">
-						<h3>Project 1 — NES Zelda-Inspired</h3>
-						<p>A nostalgic top-down adventure inspired by the NES Zelda, featuring a unique teleport mechanic that reshapes puzzles and combat flow.</p>
-						<a href="https://nononoah8.itch.io/nes-zelda" target="_blank" class="button primary">Play on itch.io</a>
-					</div>
+      <div class="dock" id="dock">
+        <!-- Game / Creative -->
+        <div class="dock-item" data-label="Unity">
+          <img src="images/tools/unity.png" alt="Unity">
+        </div>
+        <div class="dock-item" data-label="Unreal Engine">
+          <img src="images/tools/unreal.png" alt="Unreal Engine">
+        </div>
+        <div class="dock-item" data-label="Roblox Studio">
+          <img src="images/tools/roblox.png" alt="Roblox Studio">
+        </div>
+        <div class="dock-item" data-label="Blender">
+          <img src="images/tools/blender.png" alt="Blender">
+        </div>
+        <div class="dock-item" data-label="Photoshop">
+          <img src="images/tools/photoshop.png" alt="Photoshop">
+        </div>
+        <div class="dock-item" data-label="Cakewalk">
+          <img src="images/tools/cakewalk.png" alt="Cakewalk">
+        </div>
 
-					<!-- SmashOut Project -->
-					<div>
-						<img src="images/MainPicture.png" alt="SmashOut Project Screenshot">
-						<h3>Project 2 — SmashOut</h3>
-						<p>A physics-based medieval boxing game where players attack using <strong>R2/1</strong> and block with <strong>R1/2</strong>. Built around weighty combat, reactive feedback, and chaotic fun.</p>
-						<a href="https://upfor.itch.io/smashout" target="_blank" class="button primary">Play on itch.io</a>
-					</div>
-				</div>
-			</section>
+        <!-- Dev / Cloud -->
+        <div class="dock-item" data-label="Git">
+          <img src="images/tools/git.png" alt="Git">
+        </div>
+        <div class="dock-item" data-label="React">
+          <img src="images/tools/react.png" alt="React">
+        </div>
+        <div class="dock-item" data-label="Node.js">
+          <img src="images/tools/nodejs.png" alt="Node.js">
+        </div>
+        <div class="dock-item" data-label="AWS">
+          <img src="images/tools/aws.png" alt="AWS">
+        </div>
+        <div class="dock-item" data-label="WSL">
+          <img src="images/tools/wsl.png" alt="WSL">
+        </div>
 
-			<!-- Contributions / Creative Section -->
-			<section id="three" class="wrapper style2 fade-up">
-				<div class="inner" style="text-align:center;">
-					<h2>Contributions & Skills</h2>
-					<p>I focus on both design and development aspects of game creation.</p>
-					<ul style="list-style:none; padding:0; line-height:1.8em;">
-						<li>🎨 Custom sprite and 3D asset creation.</li>
-						<li>⚙️ Gameplay programming (C# / Unity).</li>
-						<li>🧠 Designing player feedback systems and hit detection.</li>
-						<li>🎮 Controller input mapping and UI polish.</li>
-					</ul>
-				</div>
-			</section>
+        <!-- Languages -->
+        <div class="dock-item" data-label="Python">
+          <img src="images/tools/python.png" alt="Python">
+        </div>
+        <div class="dock-item" data-label="C++">
+          <img src="images/tools/cpp.png" alt="C++">
+        </div>
+        <div class="dock-item" data-label="C#">
+          <img src="images/tools/csharp.png" alt="C#">
+        </div>
+        <div class="dock-item" data-label="Java">
+          <img src="images/tools/java.png" alt="Java">
+        </div>
+        <div class="dock-item" data-label="JavaScript">
+          <img src="images/tools/javascript.png" alt="JavaScript">
+        </div>
+        <div class="dock-item" data-label="HTML">
+          <img src="images/tools/html.png" alt="HTML">
+        </div>
+        <div class="dock-item" data-label="CSS">
+          <img src="images/tools/css.png" alt="CSS">
+        </div>
+        <div class="dock-item" data-label="SQL">
+          <img src="images/tools/sql.png" alt="SQL">
+        </div>
+        <div class="dock-item" data-label="C">
+          <img src="images/tools/c.png" alt="C">
+        </div>
+      </div>
 
-			<!-- Resume Section -->
-			<section id="four" class="wrapper style3-alt fade-up">
-				<div class="inner" style="text-align:center;">
-					<h2>My Resume</h2>
-					<p>You can view or download my resume to learn more about my background and experience.</p>
-					<a href="assets/ArtyomVardanyan_Resume.pdf" target="_blank" class="button primary">View Resume</a>
-				</div>
-			</section>
+      
+    </div>
+
+    <!-- Tooltip label -->
+    <div id="dockLabel" style="margin-top: 1rem; opacity:0.85; font-weight:600;"></div>
+
+  </div>
+</section>
+
+
+		<section id="two" class="wrapper style3 fade-up">
+  <div class="inner games-slider">
+
+    <h2>Games</h2>
+    <p style="opacity:0.85;">
+      Selected games I’ve built or led, along with my core technical and creative contributions.
+    </p>
+
+    <!-- ===== GAME SLIDER (unchanged IDs for JS) ===== -->
+    <div class="slider-frame">
+
+      <img id="gameImg" class="slider-img" src="images/Zelda.png" alt="Game image" />
+
+      <h3 id="gameTitle" class="slider-title">
+        Project 1 — NES Zelda-Inspired
+      </h3>
+
+      <p id="gameDesc" class="slider-desc">
+        A nostalgic top-down adventure inspired by the NES Zelda, featuring a unique teleport mechanic that reshapes puzzles and combat flow.
+      </p>
+
+      <a id="gameLink" href="#" target="_blank" class="button primary">
+        Play on itch.io
+      </a>
+
+      <div class="slider-controls">
+        <button class="slider-btn" id="prevBtn">‹</button>
+        <div class="slider-dots" id="dots"></div>
+        <button class="slider-btn" id="nextBtn">›</button>
+      </div>
+    </div>
+
+    <!-- ===== CONTRIBUTIONS (MERGED HERE) ===== -->
+    <div style="
+      max-width: 820px;
+      margin: 3.5rem auto 0 auto;
+      text-align: center;
+    ">
+      <h3 style="margin-bottom: 1rem;">My Contributions</h3>
+
+      <ul style="
+        list-style: none;
+        padding: 0;
+        line-height: 1.9;
+        opacity: 0.95;
+      ">
+        <li>🎮 Gameplay programming in <strong>C# / Unity</strong></li>
+        <li>🧠 Systems design: player feedback, hit detection, and combat feel</li>
+        <li>🎨 Custom sprites, 3D assets, and UI polish</li>
+        <li>⚙️ Controller input mapping and cross-device support</li>
+        <li>🤝 Team collaboration and feature ownership</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+
+			<!-- Personal Project -->
+<section id="three" class="wrapper style2 fade-up">
+  <div class="inner" style="max-width: 1000px; margin: 0 auto; text-align: center;">
+
+    <h2>Personal Project — Rust Code Cracker</h2>
+    <p style="opacity:0.85; max-width: 820px; margin: 0 auto 2.5rem auto;">
+      A collaborative web tool used by <strong>thousands</strong> of players designed for <strong>Rust</strong> players that allows groups to
+      efficiently brute-force <strong>4-digit code locks</strong> by splitting combinations across
+      any number of teammates in real time.
+    </p>
+
+    <!-- Images -->
+    <div class="personal-slider">
+  <img src="images/PlayerHome.png" class="personal-slide active" alt="Rust Code Cracker home">
+  <img src="images/PlayerProgress.png" class="personal-slide" alt="Rust Code Cracker progress">
+  <img src="images/PlayerDark.png" class="personal-slide" alt="Rust Code Cracker dark mode">
+</div>
+
+    <!-- Description -->
+    <p style="max-width: 860px; margin: 0 auto 2rem auto; line-height: 1.8;">
+      Instead of every player guessing randomly, the system assigns each participant a unique
+      subset of combinations, preventing overlap and dramatically improving efficiency.
+      The app supports real-time progress tracking, dark mode, and language selection, and is
+      designed to scale cleanly with group size.
+    </p>
+
+    <ul class="actions" style="justify-content:center;">
+      <li>
+        <a
+          href="https://rust-code-cracker.onrender.com/?lang=en"
+          target="_blank"
+          class="button primary"
+        >
+          View Live Project
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</section>
+
+			<!-- Showcase / Gallery -->
+<!-- Render Showcase -->
+<section id="renders" class="wrapper style2 fade-up">
+  <div class="inner" style="max-width:1200px;margin:0 auto;text-align:center;">
+    <h2>Render Showcase</h2>
+    <p style="opacity:0.85;margin-bottom:3rem;">
+      A selection of my Blender renders. Click any image to view full size.
+    </p>
+
+    <div class="render-grid" id="rendersGrid">
+
+      <!-- FIRST ROW (as requested) -->
+      <div class="render-item"><img src="images/BlenderShowOff/TrainScene.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/Checkmate2.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/WEB4.png"></div>
+
+      <!-- Remaining Images -->
+       <div class="render-item"><img src="images/BlenderShowOff/moonrover1.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/moonrover3.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/IronHeaven.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/Stadium.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/TownHall.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/Bank.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/Lookout.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/Observatory.png"></div>
+      
+      <div class="render-item"><img src="images/BlenderShowOff/Lightout.png"></div>
+      <div class="render-item"><img src="images/BlenderShowOff/middle eastern reddit.png"></div>
+      
+      <div class="render-item"><img src="images/BlenderShowOff/robotRobotics1.png"></div>
+
+      <div class="render-item"><img src="images/BlenderShowOff/FixFare.png"></div>
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox (put once) -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox-backdrop" id="lbClose"></div>
+
+  <div class="lightbox-card" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-btn lb-x" type="button" id="lbX" aria-label="Close">✕</button>
+    <button class="lb-btn lb-prev" type="button" id="lbPrev" aria-label="Previous">‹</button>
+
+    <img class="lightbox-img" id="lbImg" alt="Showcase image">
+
+    <button class="lb-btn lb-next" type="button" id="lbNext" aria-label="Next">›</button>
+  </div>
+</div>
 
 			<!-- Contact -->
-			<section id="five" class="wrapper style1 fade-up">
-				<div class="inner">
+			<section id="three" class="wrapper style2 fade-up">
+        <div class="inner" style="text-align:center; max-width:980px; margin:0 auto; padding:0 2rem;">
 					<h2>Get in Touch</h2>
 					<ul class="contact">
 						<li>
@@ -180,20 +388,23 @@
 							<a href="https://www.linkedin.com/in/artyom-vardanyan-022b44205" target="_blank">Artyom Vardanyan</a>
 						</li>
 					</ul>
-				</div>
-			</section>
+				
 
 		</div>
 
 		<!-- Footer -->
-		<footer id="footer" class="wrapper style1-alt">
+     <section id="four" class="wrapper style3-alt fade-up">
+        <div class="inner" style="text-align:center;">
+		
 			<div class="inner">
 				<ul class="menu">
 					<li>&copy; 2025 Artyom Vardanyan. All rights reserved.</li>
 					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
-		</footer>
+		
+    </div>
+			</section>
 
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>

@@ -3907,3 +3907,449 @@ input, select, textarea {
 			}
 
 		}
+
+
+/* ===== Games Slider ===== */
+.games-slider {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider-frame {
+  position: relative;
+  margin-top: 1.5rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.slider-img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.slider-title {
+  margin: 0.5rem 0 0.25rem 0;
+  font-weight: 700;
+}
+
+.slider-desc {
+  opacity: 0.85;
+  max-width: 720px;
+  margin: 0.5rem auto 1.25rem auto;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.slider-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.25);
+  color: #EAEAEA;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.slider-btn:hover { background: rgba(255,255,255,0.08); }
+
+.slider-dots {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  cursor: pointer;
+}
+.dot.active {
+  background: rgba(0,230,118,0.9); /* matches your green */
+  border-color: rgba(0,230,118,0.9);
+}
+
+/* Make arrows easier to tap on mobile */
+@media (max-width: 600px) {
+  .slider-frame { padding: 1.1rem; }
+  .slider-btn { width: 52px; height: 52px; }
+}
+/* ===== Games Slider ===== */
+.games-slider {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slider-frame {
+  position: relative;
+  margin-top: 1.5rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.slider-img {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto 1rem auto;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.slider-title {
+  margin: 0.5rem 0 0.25rem 0;
+  font-weight: 700;
+}
+
+.slider-desc {
+  opacity: 0.85;
+  max-width: 720px;
+  margin: 0.5rem auto 1.25rem auto;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  margin-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.slider-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0,0,0,0.25);
+  color: #EAEAEA;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.slider-btn:hover { background: rgba(255,255,255,0.08); }
+
+.slider-dots {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  cursor: pointer;
+}
+.dot.active {
+  background: rgba(0,230,118,0.9); /* matches your green */
+  border-color: rgba(0,230,118,0.9);
+}
+
+/* Make arrows easier to tap on mobile */
+@media (max-width: 600px) {
+  .slider-frame { padding: 1.1rem; }
+  .slider-btn { width: 52px; height: 52px; }
+}
+/* ===== Slider Image Normalization ===== */
+.slider-img {
+  width: 100%;
+  max-width: 720px;
+
+  /* Force consistent height */
+  height: 420px;
+
+  /* Crop instead of resizing page */
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 14px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+.slider-controls {
+  align-items: center;
+}
+
+.slider-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  width: 56px !important;
+  height: 44px !important;
+
+  padding: 0 !important;
+  line-height: 1 !important;
+  font-size: 22px !important;
+
+  border-radius: 12px;
+}
+
+.slider-btn::before,
+.slider-btn::after {
+  display: none !important; /* kills template pseudo-icons if any */
+}
+/* ===== Personal Project Image Slider ===== */
+/* ===== Personal Project Image Slider (NO CROP) ===== */
+.personal-slider {
+  position: relative;
+  max-width: 1000px;
+  height: 320px;                 /* give it more vertical room */
+  margin: 0 auto 2.5rem auto;
+  overflow: hidden;
+
+  /* nice frame so letterboxing looks good */
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.personal-slide {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;           /* ✅ no cropping */
+  object-position: center;
+
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.personal-slide.active {
+  opacity: 1;
+}
+
+.personal-slide.active {
+  opacity: 1;
+}
+/* ===== Dock (scrollbar instead of arrows) ===== */
+
+/* make the dock container wider and more prominent */
+.dock-wrap{
+  max-width: 1250px;     /* wider bar */
+  margin: 0 auto;
+}
+
+/* bigger “bar” */
+.dock{
+  width: 100%;
+  min-height: 210px;     /* taller */
+  gap: 22px;
+  padding: 34px 34px 42px 34px;
+  border-radius: 26px;
+
+  display: flex;
+  align-items: flex-end;
+
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+}
+
+/* bigger icons by default */
+.dock-item{
+  width: 110px;          /* was ~70-90 */
+  height: 110px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+
+  transition: transform 80ms ease;
+  transform-origin: center bottom;
+}
+
+/* bigger logo inside the tile */
+.dock-item img{
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.35));
+}
+
+/* (optional) slightly reduce tile shadow */
+.dock-item{
+  background: rgba(0,0,0,0.12);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.28);
+}
+
+
+.dock-item img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,0.35));
+  pointer-events: none;
+}
+
+
+/* SIGNIFICANTLY larger on hover */
+.dock-item:hover img{
+  transform: scale(2.35); /* increase/decrease to taste */
+  filter: drop-shadow(0 18px 32px rgba(0,0,0,0.60));
+}
+
+/* ===== Pretty horizontal scrollbar ===== */
+.dock::-webkit-scrollbar{
+  height: 10px;
+}
+.dock::-webkit-scrollbar-track{
+  background: rgba(255,255,255,0.06);
+  border-radius: 999px;
+}
+.dock::-webkit-scrollbar-thumb{
+  background: rgba(255,255,255,0.26);
+  border-radius: 999px;
+}
+.dock::-webkit-scrollbar-thumb:hover{
+  background: rgba(255,255,255,0.45);
+}
+
+/* Firefox scrollbar */
+.dock{
+  scrollbar-color: rgba(255,255,255,0.26) rgba(255,255,255,0.06);
+  scrollbar-width: thin;
+}
+/* ===== Bigger Tools Section ===== */
+
+#one .inner {
+  max-width: 1850px;  /* was 1050px */
+}
+
+#one h2 {
+  font-size: 2.6rem;
+}
+
+#one p {
+  font-size: 1.15rem;
+}
+
+/* ===== Bigger Dock ===== */
+
+.dock {
+  gap: 20px;
+  padding: 85px 50px 85px 50px;
+  border-radius: 24px;
+}
+
+/* Bigger base icons */
+.dock-item {
+  width: 120px;
+  height: 120px;
+}
+
+/* Bigger logo size */
+.dock-item img {
+  width: 120px;
+  height: 120px;
+}
+/* ===== FORCE Dock sizing (override template rules) ===== */
+#one .dock{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 10px 0 18px 0 !important;
+  border-radius: 0 !important;
+}
+
+/* Make each tile a real square (not a skinny pill) */
+#one .dock-item{
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Force the icon itself to actually be big */
+#one .dock-item img {
+  width: 64px !important;
+  height: 64px !important;
+  max-width: none !important;   /* key */
+  max-height: none !important;  /* key */
+  object-fit: contain !important;
+}
+/* Render Grid */
+.render-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.render-item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* PERFECT SQUARE */
+    overflow: hidden;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: transform 0.35s ease;
+}
+
+.render-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* NO SQUISHING */
+    transition: transform 0.5s ease;
+}
+
+.render-item:hover img {
+    transform: scale(1.08);
+}
+/* LIGHTBOX BASE */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* When opened */
+#lightbox.is-open {
+  display: flex;
+}
+
+/* Image */
+#lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
